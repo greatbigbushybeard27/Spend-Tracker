@@ -65,7 +65,7 @@ $('filters').onclick=e=>{let b=e.target.closest('[data-filter]');if(!b)return;fi
 function download(blob,name){let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 $('csv').onclick=()=>{let t=trip(),rows=db.transactions.filter(x=>x.tripId===t.id),cols=['merchant','amount','currency','category','when','note','lat','lon'];let csv=[cols.join(','),...rows.map(x=>cols.map(k=>'"'+String(x[k]??'').replace(/"/g,'""')+'"').join(','))].join('\n');download(new Blob([csv],{type:'text/csv'}),'spend-'+t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.csv')};
 $('backup').onclick=()=>download(new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),'spend-tracker-backup.json');$('restoreBtn').onclick=()=>$('restore').click();$('restore').onchange=async e=>{try{let d=JSON.parse(await e.target.files[0].text());if(!Array.isArray(d.trips)||!Array.isArray(d.transactions))throw 0;if(confirm('Restore '+d.trips.length+' trips and '+d.transactions.length+' transactions? This replaces current data.')){db={version:2,trips:d.trips,transactions:d.transactions};persist();showHome();toast('Backup restored ✓')}}catch{toast('Could not read that backup file')}e.target.value=''};
-if('serviceWorker'in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+if('serviceWorker'in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{}));
 if(db.trips.length===1&&db.trips[0].name==='Bristol weekend'&&db.transactions.length){}persist();renderHome();
 })();
 </script></body></html>
