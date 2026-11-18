@@ -1,0 +1,1 @@
+{"name":"Spend Tracker","short_name":"Spend Tracker","start_url":"./","scope":"./","display":"standalone","background_color":"#101512","theme_color":"#151a18","description":"Private spending tracker with receipt scanning and location tagging.","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
