@@ -155,7 +155,7 @@ function openTripForm(t=null){editingTrip=t?.id||null;$('modtitle').textContent=
 function openSpend(item=null,photo=false){let t=trip();if(!t)return;editingSpend=item?.id||null;gps=item?.lat!=null?{lat:item.lat,lon:item.lon}:null;receipt=item?.receipt||null;$('modtitle').textContent=item?'Edit spend':photo?'Scan receipt':'Quick spend';$('modhint').textContent='Saved to '+t.name+' · '+t.currency;$('tripfields').classList.add('hidden');$('spendfields').classList.remove('hidden');$('photofield').hidden=!photo&&!item?.receipt;$('merchant').value=item?.merchant||'';$('amount').value=item?.amount||'';$('amountlabel').textContent='Amount ('+(symbols[t.currency]||t.currency)+')';$('category').value=item?.category||'Food & drink';$('when').value=dateLocal(item?.when||new Date());$('note').value=item?.note||'';$('photo').value='';$('preview').style.display=receipt?'block':'none';if(receipt)$('preview').src=receipt;$('locstatus').textContent=gps?'Location attached':'Location not captured';$('modal').classList.add('show')}
 function close(){ $('modal').classList.remove('show') }
 $('newtrip').onclick=()=>openTripForm();
-$('homeView').onclick=()=>{let t=db.trips.find(x=>x.status!=='finished')||db.trips[0];if(t)showTrip(t.id)};
+$('homeView').onclick=()=>{let t=db.trips.find(x=>x.status!=='finished')||db.trips[0];if(t)showTrip(t.id)};$('featuredTrip').onclick=e=>{let c=e.target.closest('[data-trip]');if(c)showTrip(c.dataset.trip)};
 $('homeExpense').onclick=()=>{let t=db.trips.find(x=>x.status!=='finished');if(t)showTrip(t.id),openSpend()};
 $('homeMemory').onclick=()=>{let t=db.trips.find(x=>x.status!=='finished');if(t)showTrip(t.id),addMemory()};
 $('tileScrap').onclick=()=>$('scrapbookPanel').scrollIntoView({behavior:'smooth'});
