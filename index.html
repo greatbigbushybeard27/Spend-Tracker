@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101512"><meta name="description" content="A private, multi-trip spending tracker."><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><title>Let's Go · Travel & Memories</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#08070d"><meta name="description" content="A private, multi-trip spending tracker."><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><title>Let's Go · Travel & Memories</title>
 <style>
 :root{color-scheme:dark;--bg:#101512;--panel:#19221d;--line:#304037;--text:#f3f5f1;--muted:#a1afa5;--amber:#e6b45b;--green:#9ec5a5;--red:#d98c78}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,sans-serif}.app{max-width:760px;margin:auto;padding:20px 16px 48px}.top,.head,.entry{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{color:var(--amber);font-size:12px;font-weight:800;letter-spacing:.18em}.muted,small{color:var(--muted)}.hero,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:17px;margin:14px 0}.hero{background:linear-gradient(135deg,#26372d,#19251e)}.total{font-size:clamp(38px,11vw,56px);font-weight:850;letter-spacing:-.05em;margin:4px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#17231b;padding:12px;border-radius:12px}.stat b{display:block;font-size:20px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.btn{border:0;border-radius:13px;padding:13px;font-weight:750;background:var(--amber);color:#1d211b;cursor:pointer}.btn.alt{background:#28372d;color:var(--text);border:1px solid var(--line)}.btn.danger{background:#3b2824;color:#ffd4c9;border:1px solid #75473c}.entry{padding:13px 0;border-bottom:1px solid var(--line)}.entry:last-child{border:0}.entrymain{flex:1;min-width:0}.entrymain b,.entrymain small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.amount{font-weight:800}.filters{display:flex;gap:7px;overflow:auto}.chip{background:transparent;color:var(--muted);border:1px solid var(--line);padding:7px 11px;border-radius:30px;white-space:nowrap;cursor:pointer}.chip.active{background:#35483a;color:white}.modal{display:none;position:fixed;inset:0;background:#000b;z-index:3;align-items:end;justify-content:center;padding:10px}.modal.show{display:flex}.sheet{background:#19221d;border:1px solid #526454;border-radius:20px;padding:18px;width:min(100%,560px);max-height:94dvh;overflow:auto}.field{margin:12px 0}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;background:#0e1510;border:1px solid var(--line);border-radius:10px;color:white}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sheetactions{display:flex;gap:9px}.sheetactions>*{flex:1}.notice{font-size:11px;color:var(--muted)}#preview{max-width:100%;max-height:130px;display:none;margin-top:8px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--amber);color:#111;padding:10px 16px;border-radius:30px;display:none;z-index:8}.tripcard{background:linear-gradient(135deg,#202e25,#19221d);border:1px solid var(--line);border-radius:17px;padding:16px;margin:10px 0;cursor:pointer}.tripcard:active{transform:scale(.99)}.tripmeta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px;margin-top:8px}.pill{font-size:10px;letter-spacing:.08em;padding:4px 8px;border-radius:20px;background:#304638;color:#c5e0c9}.pill.done{background:#343a36;color:#b5beb8}.sectiontitle{margin:25px 0 8px;font-size:12px;color:var(--muted);letter-spacing:.12em;font-weight:800}.back{background:none;border:0;color:var(--amber);font-weight:700;padding:8px 0;cursor:pointer}.hidden{display:none!important}.empty{text-align:center;padding:28px 12px;color:var(--muted)}.tabrow{display:flex;gap:8px;overflow:auto;margin:12px 0}.tabrow button{flex:1}.maplink{color:var(--amber);font-size:12px}
 .masthead{position:relative;overflow:hidden;margin:-20px -16px 22px;padding:18px 18px 20px;background:radial-gradient(ellipse at 76% 0%,#a86b37 0%,#354c3b 30%,#17251d 67%,#101512 100%);border-bottom:1px solid #425344}
@@ -192,6 +192,66 @@ body{background:#0b0812;color:#fbf8ff}
 .scan-caption,.scan-help{color:#e0d6eb}.scan-code-wrap{background:#fff;border:3px solid #d8c3f5}
 .scan-ticket-no{color:#fff}.scan-full-btn,.wallet-open-scan{background:linear-gradient(135deg,#7542b2,#a875ed);color:#fff;border:2px solid #fff}
 .empty{color:#c9bdd8}
+
+/* LET'S GO · refined purple-black travel interface */
+:root{color-scheme:dark;--bg:#08070d;--panel:#12101a;--line:#332743;--text:#f7f4fc;--muted:#b6a9c6;--amber:#b58aff;--green:#c9a9ff;--red:#ee8ca9}
+body{background:#08070d!important;color:#f7f4fc!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;letter-spacing:.005em}
+.app{max-width:780px;padding:0 18px 52px}
+#accountBar{padding:16px 2px 8px;color:#c5b8d4}
+#accountBar button{background:#17121f;color:#fff;border:1px solid #765a94;border-radius:30px}
+.home-title{padding:26px 2px 16px}.home-title .brand{color:#c6a5ff;font-size:10px;letter-spacing:.2em}
+.home-title h1{color:#fff!important;font-size:36px;font-weight:850;letter-spacing:-1.3px;margin:4px 0}
+.home-title p{color:#b9aec7;font-size:14px}
+.round-action{background:#17121f!important;color:#fff!important;border:1px solid #80619e!important;width:48px;height:48px}
+.btn{background:linear-gradient(120deg,#7045a5,#9a6cce)!important;color:#fff!important;border:1px solid #d9c4f4!important;border-radius:14px!important;box-shadow:none!important;font-weight:800;letter-spacing:.01em}
+.btn.alt{background:#17121f!important;color:#eee5fa!important;border:1px solid #56416e!important;outline:none}
+.btn.danger{background:#311722!important;color:#ffc4d5!important;border:1px solid #85435b!important}
+.add-trip-wide{min-height:54px;font-size:16px;margin:10px 0 18px}
+.section-heading h2{color:#fff!important;font-size:19px;font-weight:800}
+.tripcard{background:linear-gradient(135deg,#21162e,#100d16)!important;border:1px solid #514064!important;border-radius:18px!important;box-shadow:0 8px 24px #0006!important}
+.tripcard-inner{padding:18px!important}.tripcard .head b{font-size:19px;color:#fff}.tripcard .muted,.tripmeta{color:#d4c8e1!important}
+.tripcard:after{background:linear-gradient(90deg,#0c0914ee,#0c091499 78%),linear-gradient(0deg,#0c0914aa,transparent)!important}
+.pill{background:#553779!important;color:#fff!important}.pill.done{background:#30263a!important;color:#d5c9df!important}
+.hero,.card,.utility-card,.sheet{background:#12101a!important;border:1px solid #382b49!important;color:#f7f4fc!important;box-shadow:0 8px 26px #0005!important}
+.field label,.muted,small,.notice{color:#b9aec7}
+.field input,.field select,.field textarea{background:#0b0910!important;color:#fff!important;border:1px solid #514064!important;border-radius:12px!important}
+.chip{background:#17121f;color:#e8def4;border:1px solid #5b4672}.chip.active{background:#7549a8;color:#fff;border-color:#d5bafa}
+.back,.maplink,.text-action{color:#c7a5ff!important}
+.entry{border-color:#30253b}.stat{background:#1b1425!important;border:1px solid #49365f}
+.trip-hero-banner{border:1px solid #60477b;box-shadow:0 12px 30px #0008}
+.trip-section{border:1px solid #80629f!important;border-radius:16px!important;box-shadow:none!important;background:linear-gradient(115deg,#21152f,#352147)!important;color:#fff!important}
+.trip-section b{font-size:17px}.trip-section small{color:#c8bad8!important}
+.wallet-ticket{background:#12101a!important;border:1px solid #6b5385!important;color:#fff!important}
+.wallet-top{background:linear-gradient(110deg,#21152f,#694398)!important;border-bottom:1px solid #b89adb!important}
+.wallet-code,.wallet-seat b{color:#d0b1ff!important}.wallet-info{background:#1c1626!important;border:1px solid #4b395f!important}
+.wallet-info b,.wallet-passenger b{color:#fff!important}.wallet-bottom{background:#241a31!important;border:1px solid #634b7d!important}
+.ticket-choice-sheet{background:#12101a!important;color:#fff!important;border:1px solid #80629f!important}
+.ticket-choice-sheet h2{color:#d0b1ff!important}.ticket-choice-sheet p{color:#b9aec7!important}
+.ticket-choice-btn.manual,.ticket-choice-btn.scan{background:linear-gradient(135deg,#38224f,#8054b2)!important;border:1px solid #c6a5e8}
+.ticket-choice-cancel{background:#21172d!important;color:#fff!important;border:1px solid #73578f}
+#barcodeViewer{background:radial-gradient(ellipse at 50% 12%,#38204e,#08070d 76%)!important}
+.scan-sheet{background:#12101a!important;color:#fff!important;border:2px solid #bda0dd!important}
+.scan-head b{color:#d0b1ff!important}.scan-close{background:#21172d!important;color:#fff!important;border:1px solid #8768a8!important}
+.scan-caption,.scan-help{color:#c6b9d3!important}.scan-ticket-no{color:#fff!important}
+.scan-full-btn,.wallet-open-scan{background:linear-gradient(120deg,#7045a5,#9a6cce)!important;border:1px solid #e2d2f5!important;color:#fff!important}
+.empty{color:#b9aec7!important}
+.world-panel{position:relative;overflow:hidden;margin:14px 0 28px;padding:20px 17px 16px;background:linear-gradient(150deg,#171020,#0d0a13 72%);border:1px solid #47335c;border-radius:24px;box-shadow:0 16px 40px #0007}
+.world-head{display:flex;justify-content:space-between;align-items:center}.world-kicker{font-size:10px;font-weight:850;letter-spacing:.2em;color:#c5a4f4}.world-head h2{font-size:24px;letter-spacing:-.7px;margin:4px 0;color:#fff}.world-head p{font-size:13px;color:#b8abc8;margin:0}
+.world-orbit{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#e0caff;background:#30203f;border:1px solid #77569a;font-size:23px}
+.world-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:20px 0 0;padding:14px 0;border-top:1px solid #332743;border-bottom:1px solid #332743}
+.world-stats div{text-align:center}.world-stats b{display:block;font-size:26px;line-height:1.1;color:#fff;font-weight:850;letter-spacing:-.8px}.world-stats span{display:block;font-size:9px;letter-spacing:.14em;color:#b9a9cb;font-weight:800;margin-top:6px}
+.globe-stage{position:relative;margin:5px auto 0;width:min(100%,430px);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+#tripGlobe{width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab}
+#tripGlobe.dragging{cursor:grabbing}
+.globe-hint{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.14em;color:#b8a8ca;font-weight:800;pointer-events:none}
+.globe-hint span{color:#a77bd5;padding:0 5px}
+.globe-trip-list{display:flex;gap:8px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:thin}
+.globe-trip-chip{flex:none;display:flex;align-items:center;gap:9px;max-width:210px;padding:9px 12px;background:#1b1425;border:1px solid #4d3963;border-radius:13px;color:#fff;text-align:left}
+.globe-trip-chip .pin-dot{width:8px;height:8px;flex:none;background:#c5a4ff;border-radius:50%;box-shadow:0 0 10px #bd91ff}
+.globe-trip-chip b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.globe-trip-chip small{display:block;font-size:10px;color:#b8abc8}
+.globe-empty{font-size:12px;color:#b8abc8;text-align:center;padding:8px}
+@media(max-width:390px){.world-panel{padding:17px 13px}.world-stats b{font-size:23px}.globe-stage{width:calc(100% + 8px);margin-left:-4px}}
 </style></head><body class="auth-locked"><div id="authGate"><div class="authbox"><div class="brand">LET'S GO · PRIVATE TRAVEL TRACKER</div><h1 id="authTitle">Welcome back</h1><p id="authDescription">Sign in to securely access your trips and spending from any device.</p><div class="authswitch"><button class="btn" id="showSignIn">Sign in</button><button class="btn alt" id="showSignUp">Create account</button></div><div class="field"><label>Email address</label><input id="authEmail" type="email" autocomplete="email" placeholder="you@example.com"></div><div class="field"><label>Password</label><input id="authPassword" type="password" autocomplete="current-password" minlength="8" placeholder="At least 8 characters"></div><div class="autherror" id="authError" role="status"></div><button class="btn" id="authSubmit" style="width:100%">Sign in</button><p class="authhint">Your trips are private to your account. Never share your password.</p></div></div><div id="accountBar" class="app"><span id="accountEmail">Signed in</span><button class="chip" id="signOut">Sign out</button></div>
 <main class="app">
 <header class="masthead">
@@ -211,6 +271,7 @@ body{background:#0b0812;color:#fbf8ff}
 <section id="home">
  <div class="home-title"><div><div class="brand">YOUR ADVENTURES</div><h1>Let's Go ✈️</h1><p class="muted">Every trip, all in one place.</p></div><button class="round-action" id="homeMenu" aria-label="Account and settings">☰</button></div>
  <button class="btn add-trip-wide" id="newtrip">＋ Add a trip</button>
+ <section id="worldPanel" class="world-panel"><div class="world-head"><div><div class="world-kicker">YOUR TRAVEL MAP</div><h2>Your world</h2><p>Every trip leaves a mark.</p></div><div class="world-orbit">✦</div></div><div class="world-stats"><div><b id="worldTripCount">0</b><span>TRIPS</span></div><div><b id="worldCountryCount">0</b><span>COUNTRIES</span></div><div><b id="worldCoverage">0%</b><span>OF THE WORLD</span></div></div><div class="globe-stage"><canvas id="tripGlobe" aria-label="Interactive globe showing your trip destinations"></canvas><div class="globe-hint">DRAG TO EXPLORE <span>·</span> TAP A PIN FOR DETAILS</div></div><div id="globeTripList" class="globe-trip-list"></div></section>
  <div class="section-heading"><h2>Current trips</h2></div><div id="activeTrips"></div>
  <div class="section-heading"><h2>Previous trips</h2><span class="muted" id="pastcount">0</span></div><div id="pastTrips"></div>
  <section class="utility-card"><b>Your travel data</b><p class="notice">Back up or restore your trips and spending.</p><div class="actions"><button class="btn alt" id="backup">⇩ Backup</button><button class="btn alt" id="restoreBtn">↥ Restore</button></div><input id="restore" type="file" accept="application/json" hidden></section>
@@ -273,9 +334,9 @@ const fmtDate=d=>new Date(d).toLocaleString('en-GB',{weekday:'short',day:'numeri
 const trip=()=>db.trips.find(t=>t.id===activeId);
 async function renderSharing(){let t=trip();if(!t)return;let owner=t.ownerId===currentUser?.id||!t.ownerId;$('sharingRole').textContent=owner?'TRIP OWNER':'SHARED TRIP';$('inviteEmail').disabled=!owner;$('sendInvite').hidden=!owner;let members=tripMembers.filter(m=>m.trip_id===t.id);$('memberList').innerHTML=members.length?members.map(m=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid var(--line)"><span>'+esc(m.invited_email)+'</span><b>'+esc(m.status.toUpperCase())+'</b></div>').join(''):'No invitations yet.';let pending=members.find(m=>m.status==='pending'&&m.user_id==null&&m.owner_id!==currentUser.id&&m.invited_email.toLowerCase()===(currentUser.email||'').toLowerCase());if(pending){$('sharingRole').textContent='INVITATION WAITING';$('memberList').innerHTML='<p>You have been invited to share this trip.</p><button class="btn" id="acceptTripInvite" style="width:100%">Accept invitation</button>'; $('acceptTripInvite').onclick=async()=>{let {error}=await supabase.from('trip_members').update({user_id:currentUser.id,status:'accepted',accepted_at:new Date().toISOString()}).eq('id',pending.id);if(error){toast(error.message);return}await loadAccount(currentUser);showTrip(t.id);toast('Trip joined ✓')}}}
 $('sendInvite').onclick=async()=>{let t=trip(),email=$('inviteEmail').value.trim().toLowerCase();if(!t||!email||!email.includes('@')){toast('Enter a valid email address.');return}if(email===(currentUser.email||'').toLowerCase()){toast('You cannot invite your own account.');return}let {error}=await supabase.from('trip_members').insert({trip_id:t.id,owner_id:currentUser.id,invited_email:email,role:'member',status:'pending'});if(error){toast(error.code==='23505'?'That email has already been invited.':error.message);return}let {data}=await supabase.from('trip_members').select('*').eq('trip_id',t.id);tripMembers=data||tripMembers;$('inviteEmail').value='';renderSharing();toast('Invitation sent ✓')};
-function showHome(){activeId=null;$('home').classList.remove('hidden');$('detail').classList.add('hidden');renderHome()}
+function showHome(){activeId=null;$('home').classList.remove('hidden');$('detail').classList.add('hidden');renderHome();setTimeout(()=>drawTripGlobe(),60)}
 function showTrip(id){activeId=id;filter='All';$('home').classList.add('hidden');$('detail').classList.remove('hidden');$('tripSections').classList.remove('hidden');$('tripSubpage').classList.add('hidden');$('expensePage').classList.add('hidden');document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='All'));renderTrip();renderSharing()}
-function renderHome(){let active=db.trips.filter(t=>t.status!=='finished').sort((a,b)=>b.createdAt.localeCompare(a.createdAt)),past=db.trips.filter(t=>t.status==='finished').sort((a,b)=>(b.endDate||b.createdAt).localeCompare(a.endDate||a.createdAt));$('pastcount').textContent=past.length;
+function renderHome(){initTripGlobe();let active=db.trips.filter(t=>t.status!=='finished').sort((a,b)=>b.createdAt.localeCompare(a.createdAt)),past=db.trips.filter(t=>t.status==='finished').sort((a,b)=>(b.endDate||b.createdAt).localeCompare(a.endDate||a.createdAt));$('pastcount').textContent=past.length;
 const card=t=>{let tx=db.transactions.filter(x=>x.tripId===t.id),dates=[t.startDate,t.endDate].filter(Boolean).map(x=>new Date(x+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})).join(' – '),place=(t.location||t.name||'travel').trim(),photo=t.photo||'https://loremflickr.com/1000/420/'+encodeURIComponent(place.replace(/[,]/g,' '))+'?lock='+encodeURIComponent(t.id);return '<article class="tripcard" data-trip="'+t.id+'"><img class="trip-photo" src="'+photo+'" alt="" loading="lazy" onerror="this.style.display=\'none\'"><div class="tripcard-inner"><div class="head"><div><b>'+esc(t.name)+'</b><div class="muted">'+esc(t.location||'Destination not set')+'</div></div><span class="pill '+(t.status==='finished'?'done':'')+'">'+(t.status==='finished'?'FINISHED':'ACTIVE')+'</span></div><div class="tripmeta"><span>'+(dates||'Dates not set')+'</span><b>'+tx.length+' expenses　›</b></div></div></article>'};
 $('activeTrips').innerHTML=active.length?active.map(card).join(''):'<div class="empty">No trips yet. Add your first adventure.</div>';$('pastTrips').innerHTML=past.length?past.map(card).join(''):'<div class="empty">Your previous trips will appear here.</div>'}
 function renderTrip(){let t=trip();if(!t){showHome();return}$('tripname').textContent=t.name;$('tripHero').style.backgroundImage="linear-gradient(90deg,#08251ce8,#08251c66),url('"+(t.photo||'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85')+"')";$('triplocation').textContent=(t.location||'YOUR TRIP').toUpperCase();$('tripdates').textContent=[t.startDate,t.endDate].filter(Boolean).join(' → ')||'Dates not set';}
@@ -311,6 +372,62 @@ $('filters').onclick=e=>{let b=e.target.closest('[data-filter]');if(!b)return;fi
 function download(blob,name){let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 $('csv').onclick=()=>{let t=trip(),rows=db.transactions.filter(x=>x.tripId===t.id),cols=['merchant','amount','currency','category','when','note','lat','lon'];let csv=[cols.join(','),...rows.map(x=>cols.map(k=>'"'+String(x[k]??'').replace(/"/g,'""')+'"').join(','))].join('\n');download(new Blob([csv],{type:'text/csv'}),'spend-'+t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.csv')};
 $('backup').onclick=()=>download(new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),'spend-tracker-backup.json');$('restoreBtn').onclick=()=>$('restore').click();$('restore').onchange=async e=>{try{let d=JSON.parse(await e.target.files[0].text());if(!Array.isArray(d.trips)||!Array.isArray(d.transactions))throw 0;if(confirm('Restore '+d.trips.length+' trips and '+d.transactions.length+' transactions? This replaces current data.')){db={version:2,trips:d.trips,transactions:d.transactions};persist();showHome();toast('Backup restored ✓')}}catch{toast('Could not read that backup file')}e.target.value=''};
+
+/* Interactive trip globe: lightweight canvas projection, drag to rotate */
+const destinationIndex=[
+{keys:['guernsey','st peter port','saint peter port'],city:'Guernsey',country:'Guernsey',lat:49.45,lon:-2.54},
+{keys:['bristol'],city:'Bristol',country:'United Kingdom',lat:51.45,lon:-2.59},
+{keys:['london'],city:'London',country:'United Kingdom',lat:51.51,lon:-.13},
+{keys:['manchester'],city:'Manchester',country:'United Kingdom',lat:53.48,lon:-2.24},
+{keys:['edinburgh'],city:'Edinburgh',country:'United Kingdom',lat:55.95,lon:-3.19},
+{keys:['paris'],city:'Paris',country:'France',lat:48.86,lon:2.35},
+{keys:['amsterdam'],city:'Amsterdam',country:'Netherlands',lat:52.37,lon:4.9},
+{keys:['lisbon'],city:'Lisbon',country:'Portugal',lat:38.72,lon:-9.14},
+{keys:['barcelona'],city:'Barcelona',country:'Spain',lat:41.39,lon:2.17},
+{keys:['madrid'],city:'Madrid',country:'Spain',lat:40.42,lon:-3.7},
+{keys:['rome'],city:'Rome',country:'Italy',lat:41.9,lon:12.5},
+{keys:['athens'],city:'Athens',country:'Greece',lat:37.98,lon:23.73},
+{keys:['berlin'],city:'Berlin',country:'Germany',lat:52.52,lon:13.4},
+{keys:['prague'],city:'Prague',country:'Czechia',lat:50.08,lon:14.44},
+{keys:['istanbul'],city:'Istanbul',country:'Turkey',lat:41.01,lon:28.97},
+{keys:['bangkok'],city:'Bangkok',country:'Thailand',lat:13.76,lon:100.5},
+{keys:['chiang mai'],city:'Chiang Mai',country:'Thailand',lat:18.79,lon:98.98},
+{keys:['koh tao'],city:'Koh Tao',country:'Thailand',lat:10.1,lon:99.84},
+{keys:['koh samui'],city:'Koh Samui',country:'Thailand',lat:9.51,lon:100.01},
+{keys:['phuket'],city:'Phuket',country:'Thailand',lat:7.88,lon:98.39},
+{keys:['hanoi'],city:'Hanoi',country:'Vietnam',lat:21.03,lon:105.85},
+{keys:['ho chi minh','saigon'],city:'Ho Chi Minh City',country:'Vietnam',lat:10.82,lon:106.63},
+{keys:['hoi an'],city:'Hoi An',country:'Vietnam',lat:15.88,lon:108.34},
+{keys:['da nang'],city:'Da Nang',country:'Vietnam',lat:16.05,lon:108.2},
+{keys:['new york'],city:'New York',country:'United States',lat:40.71,lon:-74.01},
+{keys:['los angeles'],city:'Los Angeles',country:'United States',lat:34.05,lon:-118.24},
+{keys:['tokyo'],city:'Tokyo',country:'Japan',lat:35.68,lon:139.69},
+{keys:['sydney'],city:'Sydney',country:'Australia',lat:-33.87,lon:151.21},
+{keys:['bali','denpasar'],city:'Bali',country:'Indonesia',lat:-8.65,lon:115.22},
+{keys:['mumbai'],city:'Mumbai',country:'India',lat:19.08,lon:72.88},
+{keys:['dubai'],city:'Dubai',country:'United Arab Emirates',lat:25.2,lon:55.27},
+{keys:['reykjavik'],city:'Reykjavik',country:'Iceland',lat:64.15,lon:-21.94}
+];
+function resolveTripDestination(t){let raw=(t.location||t.name||'').toLowerCase();let found=destinationIndex.find(d=>d.keys.some(k=>raw.includes(k)));if(found)return found;let countries=[['thailand',15,101,'Thailand'],['vietnam',16,106,'Vietnam'],['united kingdom',54,-2,'United Kingdom'],['uk',54,-2,'United Kingdom'],['guernsey',49.45,-2.54,'Guernsey'],['france',46,2,'France'],['spain',40,-4,'Spain'],['italy',42,12,'Italy'],['portugal',39,-8,'Portugal'],['germany',51,10,'Germany'],['netherlands',52.2,5.3,'Netherlands'],['greece',39,22,'Greece'],['japan',36,138,'Japan'],['indonesia',-2,118,'Indonesia'],['india',22,79,'India'],['united states',39,-98,'United States'],['usa',39,-98,'United States'],['australia',-25,133,'Australia']];let c=countries.find(x=>raw.includes(x[0]));return c?{city:t.location||c[3],country:c[3],lat:c[1],lon:c[2]}:null}
+function drawTripGlobe(){let canvas=$('tripGlobe');if(!canvas)return;let rect=canvas.getBoundingClientRect(),size=Math.max(240,Math.min(rect.width,440)),dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(size*dpr);canvas.height=Math.round(size*dpr);let ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);let w=size,h=size,cx=w/2,cy=h/2,r=size*.405,rotation=globeRotation||0;
+ctx.clearRect(0,0,w,h);
+let halo=ctx.createRadialGradient(cx,cy,r*.8,cx,cy,r*1.2);halo.addColorStop(0,'#a77bdf22');halo.addColorStop(.78,'#8d5acb16');halo.addColorStop(1,'#8d5acb00');ctx.fillStyle=halo;ctx.beginPath();ctx.arc(cx,cy,r*1.22,0,Math.PI*2);ctx.fill();
+let ocean=ctx.createRadialGradient(cx-r*.34,cy-r*.42,r*.05,cx,cy,r*1.12);ocean.addColorStop(0,'#392254');ocean.addColorStop(.56,'#1d1230');ocean.addColorStop(1,'#090710');ctx.fillStyle=ocean;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.fill();
+ctx.save();ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.clip();
+function project(lat,lon){let phi=lat*Math.PI/180,lam=(lon*Math.PI/180)+rotation,cl=Math.cos(phi),x=cl*Math.sin(lam),y=Math.sin(phi),z=cl*Math.cos(lam);return{x:cx+r*x,y:cy-r*y,z}}
+ctx.strokeStyle='#b995e82c';ctx.lineWidth=.7;
+for(let lat=-60;lat<=60;lat+=30){ctx.beginPath();for(let lon=-180;lon<=180;lon+=3){let p=project(lat,lon);if(lon===-180)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y)}ctx.stroke()}
+for(let lon=-150;lon<180;lon+=30){ctx.beginPath();for(let lat=-90;lat<=90;lat+=3){let p=project(lat,lon);if(lat===-90)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y)}ctx.stroke()}
+const land=[[[72,-168],[68,-145],[60,-135],[55,-125],[48,-124],[42,-118],[32,-116],[25,-108],[20,-98],[15,-92],[8,-82],[9,-78],[18,-76],[24,-80],[30,-81],[34,-75],[42,-70],[48,- sixty],[55,-60],[60,-65],[65,-80],[70,-100],[72,-130]],[[12,-81],[5,-77],[-5,-81],[-15,-76],[-25,-70],[-38,-72],[-52,-68],[-55,-58],[-45,-45],[-30,-48],[-15,-58],[0,-65],[8,-72]],[[70,-10],[72,25],[68,60],[60,80],[55,105],[50,130],[45,145],[35,140],[30,125],[20,110],[10,105],[5,95],[10,80],[5,70],[15,60],[25,50],[30,40],[35,30],[40,15],[45,5],[50,-5],[58,-10],[65,-20]],[[35,-10],[32,10],[20,30],[5,40],[-10,42],[-25,35],[-35,20],[-30,5],[-15,-5],[0,-10],[15,-15],[25,-10]],[[60,-10],[58,5],[52,15],[48,10],[50,-5],[55,-10]],[[15,45],[5,50],[-10,48],[-20,40],[-15,32],[0,35],[10,40]],[[55,130],[50,145],[42,150],[35,140]],[[5,95],[-5,115],[-10,130],[-8,145],[0,140],[5,120]], [[-12,130],[-18,145],[-30,153],[-40,145],[-44,120],[-35,115],[-25,113]],[[62,-45],[70,-35],[78,-25],[82,-45],[75,-58],[68,-55]],[[50,-8],[58,-6],[60,-2],[55,0]]];
+land.forEach(poly=>{let pts=poly.map(([lat,lon])=>project(lat,lon));if(pts.every(p=>p.z<0))return;ctx.beginPath();let started=false;pts.forEach(p=>{if(p.z<=0){started=false;return}if(!started){ctx.moveTo(p.x,p.y);started=true}else ctx.lineTo(p.x,p.y)});ctx.closePath();ctx.fillStyle='#6d4a91';ctx.strokeStyle='#b58be8a8';ctx.lineWidth=.65;ctx.fill();ctx.stroke()});
+let trips=(db.trips||[]).map(t=>({trip:t,d:resolveTripDestination(t)})).filter(x=>x.d);let plotted=[];
+trips.forEach(({trip,d})=>{let p=project(d.lat,d.lon);if(p.z<=0)return;plotted.push({trip,d,x:p.x,y:p.y});ctx.beginPath();ctx.arc(p.x,p.y,8,0,Math.PI*2);ctx.fillStyle='#d9bcff25';ctx.fill();ctx.beginPath();ctx.arc(p.x,p.y,3.5,0,Math.PI*2);ctx.fillStyle='#f3eaff';ctx.shadowColor='#c49aff';ctx.shadowBlur=10;ctx.fill();ctx.shadowBlur=0;});
+ctx.restore();
+let edge=ctx.createRadialGradient(cx-r*.85,cy-r*.9,r*.78,cx,cy,r*1.04);edge.addColorStop(0,'#ffffff00');edge.addColorStop(.88,'#9f73d322');edge.addColorStop(1,'#c69aff99');ctx.strokeStyle=edge;ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();
+canvas._plotted=plotted}
+let globeRotation=0,globeDrag=null;
+function initTripGlobe(){let canvas=$('tripGlobe');if(!canvas||canvas.dataset.ready)return;canvas.dataset.ready='1';let trips=db.trips||[],places=trips.map(t=>resolveTripDestination(t)).filter(Boolean),countries=[...new Set(places.map(x=>x.country))];$('worldTripCount').textContent=trips.length;$('worldCountryCount').textContent=countries.length;$('worldCoverage').textContent=Math.round(countries.length/195*100)+'%';$('globeTripList').innerHTML=trips.length?trips.map(t=>{let d=resolveTripDestination(t);return '<button class="globe-trip-chip" data-globe-trip="'+t.id+'"><i class="pin-dot"></i><span><b>'+esc(t.name)+'</b><small>'+esc(d?d.city+', '+d.country:(t.location||'Location not mapped'))+'</small></span></button>'}).join(''):'<div class="globe-empty">Your first trip will appear on the globe.</div>';drawTripGlobe();canvas.addEventListener('pointerdown',e=>{globeDrag={x:e.clientX,last:e.clientX};canvas.setPointerCapture(e.pointerId);canvas.classList.add('dragging')});canvas.addEventListener('pointermove',e=>{if(!globeDrag)return;let dx=e.clientX-globeDrag.last;globeRotation+=dx/Math.max(120,canvas.clientWidth)*Math.PI*1.7;globeDrag.last=e.clientX;drawTripGlobe()});const stop=e=>{if(!globeDrag)return;let moved=Math.abs(globeDrag.x-e.clientX);globeDrag=null;canvas.classList.remove('dragging');if(moved<7){let rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top,near=(canvas._plotted||[]).map(p=>({...p,dist:Math.hypot(p.x- x*canvas.width/(Math.min(rect.width,440)*Math.min(devicePixelRatio||1,2)),p.y-y*canvas.width/(Math.min(rect.width,440)*Math.min(devicePixelRatio||1,2)))})).sort((a,b)=>a.dist-b.dist)[0];if(near&&near.dist<25)showTrip(near.trip.id)}};canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',()=>{globeDrag=null;canvas.classList.remove('dragging')});$('globeTripList').addEventListener('click',e=>{let b=e.target.closest('[data-globe-trip]');if(b)showTrip(b.dataset.globeTrip)});if(window.ResizeObserver){new ResizeObserver(()=>drawTripGlobe()).observe(canvas)}}
+
 if('serviceWorker'in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(reg=>reg.update()).catch(()=>{}));
 // The app stays locked until Supabase confirms a signed-in user.
 })();
